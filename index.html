@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="sm:w-[1400px] flex flex-col gap-4 sm:flex sm:flex-row justify-between items-center m-auto h-22">
+    <nav class="sm:px-5 sm:w-[1500px] flex flex-col gap-4 sm:flex sm:flex-row justify-between items-center m-auto h-22">
         <div class="flex items-center w-[195px] h-[70px]">
             <img class="m-2 max-w-full max-h-full" src="assets/logo.png" alt="">
             <h1 class="text-[#006747] font-bold">Emergency <br>Servite</h1>
@@ -33,13 +33,13 @@
                 <img class="max-w-full max-h-full" src="assets/coin.png" alt="">
             </div>
             <div
-                class="bg-[#00A63E] text-white my-auto p-2 flex items-center justify-center  w-[110px] h-[54px] rounded-3xl">
-                <h1 class="font-semibold text-xl">2 Copy</h1>
+                class="bg-[#00A63E] text-white flex items-center justify-center  w-[110px] h-[54px] rounded-3xl">
+                <h1 class="font-semibold text-l" id="nav-copy">0 Copy</h1>
             </div>
         </div>
     </nav>
     <section
-        class="mt-10 sm:mt-0.5 flex flex-col justify-center items-center py-4 sm:w-[1600px] mx-auto text-white bg-[linear-gradient(90deg,rgba(1.25,49.64,34.61,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)]">
+        class="mt-10 sm:mt-0.5 flex flex-col justify-center items-center py-4 sm:w-[1520px] mx-auto text-white bg-[linear-gradient(90deg,rgba(1.25,49.64,34.61,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)]">
         <div class="w-[100px] h-[95px]">
             <img class="m-auto max-w-full max-h-full" src="assets/logo.png" alt="">
         </div>
@@ -48,7 +48,7 @@
             Republic of
             Bangladesh</p>
     </section>
-    <main class="p-4 bg-[#F5FFF6] sm:w-[1400px] sm:flex m-auto">
+    <main class="p-4 bg-[#F5FFF6] sm:w-[1500px] sm:flex m-auto">
         <section class=" sm:w-3/4 grid sm:grid-cols-3 gap-3">
             <div class="p-3 rounded-[12px] shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] bg-white">
                 <div class="flex justify-between items-center ">
@@ -61,11 +61,11 @@
                     <p class="text-[#5c5c5c]">National Emergency</p>
                 </div>
                 <div class="my-2">
-                    <h1 class="font-bold text-2xl">999</h1>
+                    <h1 class="font-bold text-2xl" id="copy-number1">999</h1>
                     <p class=" text-[#5c5c5c] bg-[#F2F2F2] rounded-2xl inline-block px-2.5">All</p>
                 </div>
-                <div class="flex justify-between ">
-                    <button class="btn px-8 rounded-2xl text-[#5c5c5c]"><i class="fa-regular fa-copy"></i>Copy</button>
+                <div class="flex justify-between sm:gap-1.5">
+                    <button class="btn px-8 rounded-2xl text-[#5c5c5c]" id="copy-btn1"><i class="fa-regular fa-copy"></i>Copy</button>
                     <button class="btn px-8 bg-[#00a63e] text-white rounded-2xl" id="call-btn1"><i class="fa-solid fa-phone"></i>Call</button>
                     
                 </div>
@@ -83,11 +83,11 @@
                     <p class="text-[#5c5c5c]">Police</p>
                 </div>
                 <div class="my-2">
-                    <h1 class="font-bold text-2xl">999</h1>
+                    <h1 class="font-bold text-2xl" id="copy-number2">999</h1>
                     <p class=" text-[#5c5c5c] bg-[#F2F2F2] rounded-2xl inline-block px-2.5">All</p>
                 </div>
-                <div class="flex justify-between ">
-                    <button class="btn px-8 rounded-2xl text-[#5c5c5c]"><i class="fa-regular fa-copy"></i>Copy</button>
+                <div class="flex justify-between sm:gap-1.5 ">
+                    <button class="btn px-8 rounded-2xl text-[#5c5c5c]" id="copy-btn2"><i class="fa-regular fa-copy"></i>Copy</button>
                     <button class="btn px-8 bg-[#00a63e] text-white rounded-2xl" id="call-btn2"><i class="fa-solid fa-phone"></i>Call</button>
                     
                 </div>
@@ -104,11 +104,11 @@
                     <p class="text-[#5c5c5c]">Fire Service</p>
                 </div>
                 <div class="my-2">
-                    <h1 class="font-bold text-2xl">999</h1>
+                    <h1 class="font-bold text-2xl" id="copy-number3">999</h1>
                     <p class=" text-[#5c5c5c] bg-[#F2F2F2] rounded-2xl inline-block px-2.5">Fire</p>
                 </div>
-                <div class="flex justify-between ">
-                    <button class="btn px-8 rounded-2xl text-[#5c5c5c]"><i class="fa-regular fa-copy"></i>Copy</button>
+                <div class="flex justify-between sm:gap-1.5 ">
+                    <button class="btn px-8 rounded-2xl text-[#5c5c5c]" id="copy-btn3"><i class="fa-regular fa-copy"></i>Copy</button>
                     <button class="btn px-8 bg-[#00a63e] text-white rounded-2xl" id="call-btn3"><i class="fa-solid fa-phone"></i>Call</button>
                     
                 </div>
@@ -125,11 +125,11 @@
                     <p class="text-[#5c5c5c]">Ambulance</p>
                 </div>
                 <div class="my-2">
-                    <h1 class="font-bold text-2xl">1994-999999</h1>
+                    <h1 class="font-bold text-2xl" id="copy-number4">1994-999999</h1>
                     <p class=" text-[#5c5c5c] bg-[#F2F2F2] rounded-2xl inline-block px-2.5">Health</p>
                 </div>
-                <div class="flex justify-between ">
-                    <button class="btn px-8 rounded-2xl text-[#5c5c5c]"><i class="fa-regular fa-copy"></i>Copy</button>
+                <div class="flex justify-between sm:gap-1.5 ">
+                    <button class="btn px-8 rounded-2xl text-[#5c5c5c]" id="copy-btn4"><i class="fa-regular fa-copy"></i>Copy</button>
                     <button class="btn px-8 bg-[#00a63e] text-white rounded-2xl" id="call-btn4"><i class="fa-solid fa-phone"></i>Call</button>
                     
                 </div>
@@ -145,11 +145,11 @@
                     <p class="text-[#5c5c5c]">Women & Child Helpline</p>
                 </div>
                 <div class="my-2">
-                    <h1 class="font-bold text-2xl">109</h1>
+                    <h1 class="font-bold text-2xl" id="copy-number5">109</h1>
                     <p class=" text-[#5c5c5c] bg-[#F2F2F2] rounded-2xl inline-block px-2.5">Help</p>
                 </div>
-                <div class="flex justify-between ">
-                    <button class="btn px-8 rounded-2xl text-[#5c5c5c]"><i class="fa-regular fa-copy"></i>Copy</button>
+                <div class="flex justify-between sm:gap-1.5 ">
+                    <button class="btn px-8 rounded-2xl text-[#5c5c5c]" id="copy-btn5"><i class="fa-regular fa-copy"></i>Copy</button>
                     <button class="btn px-8 bg-[#00a63e] text-white rounded-2xl" id="call-btn5"><i class="fa-solid fa-phone"></i>Call</button>
                     
                 </div>
@@ -165,11 +165,11 @@
                     <p class="text-[#5c5c5c]">Anti-Corruption</p>
                 </div>
                 <div class="my-2">
-                    <h1 class="font-bold text-2xl">106</h1>
+                    <h1 class="font-bold text-2xl" id="copy-number6">106</h1>
                     <p class=" text-[#5c5c5c] bg-[#F2F2F2] rounded-2xl inline-block px-2.5">Govt.</p>
                 </div>
-                <div class="flex justify-between ">
-                    <button class="btn px-8 rounded-2xl text-[#5c5c5c]"><i class="fa-regular fa-copy"></i>Copy</button>
+                <div class="flex justify-between sm:gap-1.5 ">
+                    <button class="btn px-8 rounded-2xl text-[#5c5c5c]" id="copy-btn6"><i class="fa-regular fa-copy"></i>Copy</button>
                     <button class="btn px-8 bg-[#00a63e] text-white rounded-2xl" id="call-btn6"><i class="fa-solid fa-phone"></i>Call</button>
                     
                 </div>
@@ -186,11 +186,11 @@
                     <p class="text-[#5c5c5c]">Electricity Outage</p>
                 </div>
                 <div class="my-2">
-                    <h1 class="font-bold text-2xl">16216</h1>
+                    <h1 class="font-bold text-2xl" id="copy-number7">16216</h1>
                     <p class=" text-[#5c5c5c] bg-[#F2F2F2] rounded-2xl inline-block px-2.5">Electricity</p>
                 </div>
-                <div class="flex justify-between ">
-                    <button class="btn px-8 rounded-2xl text-[#5c5c5c]"><i class="fa-regular fa-copy"></i>Copy</button>
+                <div class="flex justify-between sm:gap-1.5 ">
+                    <button class="btn px-8 rounded-2xl text-[#5c5c5c]" id="copy-btn7"><i class="fa-regular fa-copy"></i>Copy</button>
                     <button class="btn px-8 bg-[#00a63e] text-white rounded-2xl" id="call-btn7"><i class="fa-solid fa-phone"></i>Call</button>
                     
                 </div>
@@ -206,11 +206,11 @@
                     <p class="text-[#5c5c5c]">Brac</p>
                 </div>
                 <div class="my-2">
-                    <h1 class="font-bold text-2xl">16445</h1>
+                    <h1 class="font-bold text-2xl" id="copy-number8">16445</h1>
                     <p class=" text-[#5c5c5c] bg-[#F2F2F2] rounded-2xl inline-block px-2.5">NGO</p>
                 </div>
-                <div class="flex justify-between ">
-                    <button class="btn px-8 rounded-2xl text-[#5c5c5c]"><i class="fa-regular fa-copy"></i>Copy</button>
+                <div class="flex justify-between sm:gap-1.5 ">
+                    <button class="btn px-8 rounded-2xl text-[#5c5c5c]" id="copy-btn8"><i class="fa-regular fa-copy"></i>Copy</button>
                     <button class="btn px-8 bg-[#00a63e] text-white rounded-2xl" id="call-btn8"><i class="fa-solid fa-phone"></i>Call</button>
                     
                 </div>
@@ -226,11 +226,11 @@
                     <p class="text-[#5c5c5c]">Bangladesh Railway</p>
                 </div>
                 <div class="my-2">
-                    <h1 class="font-bold text-2xl">163</h1>
+                    <h1 class="font-bold text-2xl" id="copy-number9">163</h1>
                     <p class=" text-[#5c5c5c] bg-[#F2F2F2] rounded-2xl inline-block px-2.5">Travel</p>
                 </div>
-                <div class="flex justify-between ">
-                    <button class="btn px-8 rounded-2xl text-[#5c5c5c]"><i class="fa-regular fa-copy"></i>Copy</button>
+                <div class="flex justify-between sm:gap-1.5 ">
+                    <button class="btn px-8 rounded-2xl text-[#5c5c5c]" id="copy-btn9"><i class="fa-regular fa-copy"></i>Copy</button>
                     <button class="btn px-8 bg-[#00a63e] text-white rounded-2xl" id="call-btn9"><i class="fa-solid fa-phone"></i>Call</button>
                     
                 </div>

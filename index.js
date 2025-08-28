@@ -98,7 +98,7 @@ document.getElementById("call-btn7")
 
 document.getElementById("call-btn8")
 .addEventListener('click', function() {
-    addCard("Brac Helpline", "163", "Calling Brac Helpline 163");
+    addCard("Brac Helpline", "16445", "Calling Brac Helpline 16445");
 });
 
 document.getElementById("call-btn9")
@@ -107,11 +107,36 @@ document.getElementById("call-btn9")
 });
 
 
-
-
-
     document.getElementById("clear")
     .addEventListener('click',function(){
         const clear = document.getElementById('container')
         clear.innerHTML = '';
     })
+
+
+   let copy = parseInt(document.getElementById("nav-copy").innerText)
+
+   
+   function copyPart(copyBtn,copyNumber){
+            document.getElementById(copyBtn)
+            .addEventListener('click',function(){
+
+    const text = document.getElementById(copyNumber).innerText
+    navigator.clipboard.writeText(text)
+    alert("The number has been copied: " + text)
+    copy = copy + 1;
+    document.getElementById("nav-copy").innerText = copy
+
+   })
+
+   }
+
+   copyPart("copy-btn1","copy-number1")
+   copyPart("copy-btn2","copy-number2")
+   copyPart("copy-btn3","copy-number3")
+   copyPart("copy-btn4","copy-number4")
+   copyPart("copy-btn5","copy-number5")
+   copyPart("copy-btn6","copy-number6")
+   copyPart("copy-btn7","copy-number7")
+   copyPart("copy-btn8","copy-number8")
+   copyPart("copy-btn9","copy-number9")
