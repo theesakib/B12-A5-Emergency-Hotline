@@ -24,13 +24,12 @@ everycard("heart9")
 
 let d = parseInt(document.getElementById("coin").innerText)
 
-    document.getElementById("call-btn")
-    .addEventListener('click',function(){
-        
+    function addCard(title,number,alertmsg){
+
         if(d>0)
         {
             d = d-20;
-            alert("Calling National Emergency 999")
+            alert(alertmsg)
             document.getElementById("coin").innerText = d
 
             const container = document.getElementById("container")
@@ -42,8 +41,8 @@ let d = parseInt(document.getElementById("coin").innerText)
 
             div.innerHTML = `
             <div>
-            <h1 class="font-semibold">National Emergency</h1>
-            <p class="text-[#5c5c5c]">999</p>
+            <h1 class="font-semibold">${title}</h1>
+            <p class="text-[#5c5c5c]">${number}</p>
             </div>
             <div>
             <p class=" text-sm">${timeStr}</p>
@@ -58,4 +57,61 @@ let d = parseInt(document.getElementById("coin").innerText)
             return
         }
         
+    }
+        
+        
+
+document.getElementById("call-btn1")
+.addEventListener('click', function() {
+    addCard("National Emergency Number", "999", "Calling National Emergency 999");
+});
+
+document.getElementById("call-btn2")
+.addEventListener('click', function() {
+    addCard("Police Helpline Number", "999", "Calling Police Helpline Number 999");
+});
+
+document.getElementById("call-btn3")
+.addEventListener('click', function() {
+    addCard("Fire Service Number", "999", "Calling Fire Service Number 999");
+});
+
+document.getElementById("call-btn4")
+.addEventListener('click', function() {
+    addCard("Ambulance Service", "1994-999999", "Calling Ambulance Service 1994-999999");
+});
+
+document.getElementById("call-btn5")
+.addEventListener('click', function() {
+    addCard("Women & Child Helpline", "109", "Women & Child Helpline 109");
+});
+
+document.getElementById("call-btn6")
+.addEventListener('click', function() {
+    addCard("Anti-Corruption Helpline", "106", "Calling Anti-Corruption Helpline 106");
+});
+
+document.getElementById("call-btn7")
+.addEventListener('click', function() {
+    addCard("Electricity Helpline", "16216", "Calling Electricity Helpline 16216");
+});
+
+document.getElementById("call-btn8")
+.addEventListener('click', function() {
+    addCard("Brac Helpline", "163", "Calling Brac Helpline 163");
+});
+
+document.getElementById("call-btn9")
+.addEventListener('click', function() {
+    addCard("Bangladesh Railway Helpline", "163", "Calling Bangladesh Railway Helpline 163");
+});
+
+
+
+
+
+    document.getElementById("clear")
+    .addEventListener('click',function(){
+        const clear = document.getElementById('container')
+        clear.innerHTML = '';
     })
